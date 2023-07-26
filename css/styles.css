@@ -10888,14 +10888,14 @@ video.bg-video {
 .masthead .masthead-content {
   position: relative;
   max-width: 40rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 .masthead .masthead-content h1, .masthead .masthead-content .h1 {
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
 .masthead .masthead-content p {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .masthead .masthead-content p strong {
   font-weight: 700;
@@ -10929,7 +10929,7 @@ video.bg-video {
     padding-top: 0;
     padding-bottom: 0;
     padding-left: 2rem;
-    padding-right: 9rem;
+    padding-right: 6rem;
   }
   .masthead .masthead-content h1, .masthead .masthead-content .h1 {
     font-size: 3.5rem;
