@@ -19,16 +19,36 @@
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','GTM-P2FZQ6QC');</script>
     <!-- End Google Tag Manager -->
+    
+
+<!-- COMMON TAGS -->
+<meta charset="utf-8">
+<title>Solución Capiatá</title>
+<!-- Search Engine -->
+<meta name="description" content="Impulsar la participación ciudadana en las Elecciones Nacionales, Municipales y Departamentales la integración económica, social y política del pueblo paraguayo, para enfrentar desafíos y obtener resultados favorables a los intereses generales. ">
+<!-- Schema.org for Google -->
+<meta itemprop="name" content="Solución Capiatá">
+<meta itemprop="description" content="Impulsar la participación ciudadana en las Elecciones Nacionales, Municipales y Departamentales la integración económica, social y política del pueblo paraguayo, para enfrentar desafíos y obtener resultados favorables a los intereses generales. ">
+<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+<meta name="og:title" content="Solución Capiatá">
+<meta name="og:description" content="Impulsar la participación ciudadana en las Elecciones Nacionales, Municipales y Departamentales la integración económica, social y política del pueblo paraguayo, para enfrentar desafíos y obtener resultados favorables a los intereses generales. ">
+<meta name="og:image" content="https://github.com/SolucionCapiata/SolucionCapiata.github.io/blob/gh-pages/assets/img/Logo1-MovimientoSoluci%C3%B3nCapiat%C3%A1.png">
+<meta name="og:url" content="https://solucioncapiata.github.io">
+<meta name="og:site_name" content="Web">
+<meta name="og:locale" content="es_ES">
+<meta name="fb:admins" content="solucioncapiata">
+<meta name="fb:app_id" content="solucioncapiata">
+<meta name="og:type" content="website">
+
 
         
-        <meta charset="utf-8" />
+        <!-- <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="Movimiento Solución Capiatá | Cruzada Nacional" />
-        <meta name="keywords" content="Movimiento Solución Capiatá, Cruzada Nacional, Payo Cubas, Paraguayo Cubas, Yolanda Parades, Capiata, Partido politico"/>
+        <meta name="keywords" content="Movimiento Solución Capiatá, Cruzada Nacional, Payo Cubas, Paraguayo Cubas, Yolanda Parades, Capiata, Partido politico"/>```````
+        <meta name="author" content="Katumiroo" /> -->
 
 
-
-        <meta name="author" content="Katumiroo" />
         <title>Mov. SoluciónCapiatá</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -45,12 +65,19 @@
                 z-index: 1;
                 text-align: center;
             }   
+            img.my-auto {
+                max-width: 200px;
+                min-width: 100px;
+                width: 20%;
+                height: auto;
+            }
             h1.lh-1, a.btn.btn-dark {
                 color: #ffc107;
             }
-            #submitButton {
+            #afiliacion, #close {
                 background-color: #ffc107!important;
                 color: black;
+                font-weight: bold   ;
             }
          
             /* Dele overlay to use modal contact form */
@@ -68,16 +95,17 @@
                 color:  #ffc107!important;
                 font-size: 25px;
             }
+           
             body video {
-            display: block!important;
-        }
+                display: block!important;
+            }
             
             /* resize form MOBILE */
             .teQAzf {
                 max-width: 100vw!important;
             }
             h1#staticBackdropLabel {
-                font-size: 1.5rem !important;
+                font-size: 1rem !important;
                 padding: 10px;
                 border-radius: 11px;
                 line-height: 1.2;
@@ -91,7 +119,14 @@
                 height: 3rem;
                 width: 3rem;
             }
-    
+            @media (min-width: 992px) {
+                img.my-auto {
+                    width: 100%;
+                }
+                h1#staticBackdropLabel {
+                    font-size: 1.5rem !important;
+                }
+            }
           
         </style>
     </head>
@@ -108,7 +143,7 @@
             <div class="masthead-content text-white">
                 <div class="container-fluid px-4 px-lg-0">
                     <div class=" logo my-auto">
-                        <img src="assets/img/Logo1-MovimientoSoluciónCapiatá.png" alt="Bootstrap" width="100" height="100" class=" my-auto">
+                        <img src="assets/img/Logo1-MovimientoSoluciónCapiatá.png" alt="Logo SolucionCapiata" class=" my-auto">
                     </div>
                     <h1 class="fst-italic lh-1 mb-3">Movimiento  Solución <br>Capiatá</h1>
                     <p class="mb-3">
@@ -121,7 +156,7 @@
                     <!-- To make this form functional, sign up at-->
                     <!-- https://startbootstrap.com/solution/contact-forms-->
                     <!-- to get an API token!-->
-                    <button type="button" id="afiliacion" class="btn text-black bg-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <button type="button" id="afiliacion" class="btn text-black bg-warning " data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                         AFILIARME
                       </button>
                     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -137,8 +172,8 @@
                                     
                                     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfbuByqdIjdfk13qm9hd9gjWSqyY2rb0xlDZTDGwTfAsadvMg/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
                                 </div>
-                                <div class="modal-footer">
-                                    <button class="btn btn-secondary text-warning bg-black" data-bs-dismiss="modal">Cerrar</button>
+                                <div class="modal-footer d-none">
+                                    <button class="btn btn-secondary " data-bs-dismiss="modal" id="close">Cerrar</button>
                                 </div>
                             </div>
                             <!--/.Content-->
