@@ -41,6 +41,27 @@
             svg.svg-inline--fa {
                 font-size: 30px;
             }
+            /* Dele overlay to use modal contact form */
+            .modal-backdrop {
+                z-index: auto;
+            }
+            .social-icons {
+                z-index: 1;
+            }
+            /* resize form MOBILE */
+            .teQAzf {
+                max-width: 100vw!important;
+            }
+            h1#staticBackdropLabel {
+                font-size: 1.5rem !important;
+                padding: 10px;
+                border-radius: 11px;
+                line-height: 1.2;
+            }
+            button.btn-close.text-warning {
+                filter: invert(8%) sepia(97%) saturate(7488%) hue-rotate(12deg) brightness(92%) contrast(114%);
+                font-size: 1.5rem;
+            }
         </style>
     </head>
     <body>
@@ -61,32 +82,35 @@
                     <!-- To make this form functional, sign up at-->
                     <!-- https://startbootstrap.com/solution/contact-forms-->
                     <!-- to get an API token!-->
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                        <!-- Email address input-->
-                        <div class="row input-group-newsletter">
-                            <div class="col"><input class="form-control" id="email" type="email" placeholder="Ingrese su correo..." aria-label="Ingrese su correo..." data-sb-validations="required,email" /></div>
-                            <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">AFILIARME!</button></div>
-                        </div>
-                        <div class="invalid-feedback mt-2" data-sb-feedback="email:required">An email is required.</div>
-                        <div class="invalid-feedback mt-2" data-sb-feedback="email:email">Email is not valid.</div>
-                        <!-- Submit success message-->
-                        <!---->
-                        <!-- This is what your users will see when the form-->
-                        <!-- has successfully submitted-->
-                        <div class="d-none" id="submitSuccessMessage">
-                            <div class="text-center mb-3 mt-2">
-                                <div class="fw-bolder">Form submission successful!</div>
-                                To activate this form, sign up at
-                                <br />
-                                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                    <button type="button" class="btn text-black bg-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        AFILIARME
+                      </button>
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <!--Content-->
+                            <div class="modal-content" style=" text-align: center; overflow-y: scroll;">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5 text-black my-auto bg-warning" id="staticBackdropLabel">Solicitud de Afiliación al Partido Cruzada Nacional</h1>
+                                    <button type="button" class="btn-close text-warning " data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <!--Body-->
+                                <div class="modal-body mb-0 p-0">
+                                    
+                                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfbuByqdIjdfk13qm9hd9gjWSqyY2rb0xlDZTDGwTfAsadvMg/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary text-warning bg-black" data-bs-dismiss="modal">Cerrar</button>
+                                </div>
                             </div>
+                            <!--/.Content-->
                         </div>
-                        <!-- Submit error message-->
-                        <!---->
-                        <!-- This is what your users will see when there is-->
-                        <!-- an error submitting the form-->
-                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
-                    </form>
+                    </div>
+
+
+
+
+
+
                 </div>
             </div>
         </div>
